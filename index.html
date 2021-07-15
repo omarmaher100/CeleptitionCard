@@ -1,5 +1,7 @@
 <html dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<style>
+@font-face {font-family: "HelveticaNeueLTArabic-Light"; src: url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.eot"); src: url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.woff") format("woff"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.svg#HelveticaNeueLTArabic-Light") format("svg"); }
+</style>
 <meta name="author" content="codejq@gmail.com">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>كارت معايده</title>
@@ -65,7 +67,7 @@ window.onload = function(){
      var imageObj = new Image();
      imageObj.onload = function(){
          context.drawImage(imageObj, 0, 0);
-         context.font = "25pt Calibri ";
+         context.font = "25pt HelveticaNeueLTArabic-Light ";
          //context.fillText("السلام عليكم ورحمة الله وبركاته ", 800, 60);
      };
      imageObj.src = "./img2.jpg"; 
