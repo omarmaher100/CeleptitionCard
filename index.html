@@ -15,7 +15,7 @@
 <nav class="navbar text-white sticky-top" style="direction:rtl;background-color: #28739b;color:#ffffff">
 
           <a href="index.html" class="navbar-brand " style="color:#ffffff">
-            <strong>كارت معايده</strong>
+            <strong>بطاقة معايده</strong>
           </a>
  
 	  <img src="./logo.png" width="150" height="30" class="d-inline-block align-top" alt="">
@@ -96,7 +96,7 @@ function WriteToImage(){
      var imageObj = new Image();
      imageObj.onload = function(){
          context.drawImage(imageObj, 0, 0);
-         context.font = "25pt Calibri ";
+         context.font = "25pt HelveticaNeueLTArabic-Light ";
 		 context.fillStyle = document.getElementById("textcolor").value;
 		 context.strokeStyle = document.getElementById("textcolor").value;
 		 console.log(document.getElementById("textcolor").value);
