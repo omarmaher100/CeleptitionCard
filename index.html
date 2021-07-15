@@ -1,8 +1,6 @@
 <html dir="rtl"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style>
-@font-face {    font-family:  "HelveticaNeueLTArabic-Light";
-    src: url(https://github.com/omarmaher100/CeleptitionCard/HelveticaNeueLTArabic-Light.ttf) format("truetype");
-   }
+@font-face {font-family: "HelveticaNeueLTArabic-Light"; src: url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.eot"); src: url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.woff") format("woff"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0aafb9b674c2d4e614b8ea00d10cec51.svg#HelveticaNeueLTArabic-Light") format("svg"); }
 </style>
 <meta name="author" content="codejq@gmail.com">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,7 +67,7 @@ window.onload = function(){
      var imageObj = new Image();
      imageObj.onload = function(){
          context.drawImage(imageObj, 0, 0);
-         context.font = "25pt HelveticaNeueLTArabic-Light";
+         context.font = "25pt HelveticaNeueLTArabic-Light ";
          //context.fillText("السلام عليكم ورحمة الله وبركاته ", 800, 60);
      };
      imageObj.src = "./img2.jpg"; 
@@ -98,14 +96,14 @@ function WriteToImage(){
      var imageObj = new Image();
      imageObj.onload = function(){
          context.drawImage(imageObj, 0, 0);
-         context.font = "25pt HelveticaNeueLTArabic-Light";
+         context.font = "25pt HelveticaNeueLTArabic-Light ";
 		 context.fillStyle = document.getElementById("textcolor").value;
 		 context.strokeStyle = document.getElementById("textcolor").value;
 		 console.log(document.getElementById("textcolor").value);
 		 context.textAlign = "center";
 		 var textArray = text.split("\n");
 		 for(var i = 0 ; i < textArray.length ; i++){ 
-			context.strokeText(textArray[i], 50+ canvas.width/2, 480 + (i * 60) );
+		
 			context.fillText(textArray[i], 50 +canvas.width/2, 479 + (i * 60) );
 			
 		 }
